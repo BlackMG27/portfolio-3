@@ -13,24 +13,47 @@
 
 <body>
     <header>
-        <img src="./assets/images/ike_logo.png" id="ikeLogo" alt="Ike Logo" />
+        <h2 class="nav__title">Ogechi Ike</h2>
         <nav class="topNav" role="navigation">
             <li class="nav__list" tabindex="0"><a href="./index.html">Home</a></li>
             <li class="nav__list" tabindex="0"><a href='./project.html'>Projects</a></li>
-            <li class="nav__list" tabindex="0"><a href="#about">About Me</a></li>
+            <li class="nav__list" tabindex="0"><a href="index.html#about">About</a></li>
             <li class="nav__list" tabindex="0">
-                <a href="#contact">Contact Me</a>
+                <a href="index.html#contact">Contact</a>
             </li>
         </nav>
-        <h1>Projects</h1>
+        <h1 class="page__title">Projects</h1>
+        <h2 class="page__sub__title">Checkout What I've Been Doing!</h2>
     </header>
-    <section class="portfolio__piece">
+    <section class="portfolio__piece" id="p1">
         <div>
             <img src="./assets/images/check-yourself.png" alt="Check Yourself">
         </div>
         <div>
-            <p></p>
-            <p></p>
+            <h3 class="project__title">Check Yourself</h3>
+            <p>Check Yourself is a web app that allows users to log and manage their spending habits. Users will be able
+                to set custom categories, see upcoming bills, and set warning triggers to be notified when spending
+                approaches their limit.</p>
+            <h4 class="tech__title">Tech Stack</h4>
+            <div class="tech__info">
+                <ul class="tech__group">
+                    <li class="tech__list">Javascript</li>
+                    <li class="tech__list">Moment.js</li>
+                    <li class="tech__list">Express</li>
+                    <li class="tech__list">Node.js</li>
+                    <li class="tech__list">MySQL</li>
+                    <li class="tech__list">Heroku</li>
+                </ul>
+                <ul class="tech__group">
+                    <li class="tech__list">Materialize CSS</li>
+                    <li class="tech__list">Chart.js</li>
+                    <li class="tech__list">Nodemailer</li>
+                    <li class="tech__list">Sequelize ORM</li>
+                    <li class="tech__list">jQuery</li>
+                    <li class="tech__list">Handlebars</li>
+                </ul>
+            </div>
+
             <a href="https://pacific-forest-78479.herokuapp.com/" class="live__link">Live Link</a>
             <a href="https://github.com/BlackMG27/BudgetManager" class="github__link">Github Link</a>
         </div>
@@ -40,19 +63,52 @@
             <img src="./assets/images/movies-galore.png" alt="Movies Galore">
         </div>
         <div>
-            <p></p>
-            <p></p>
+            <h3 class="project__title">Movies Galore</h3>
+            <p>Our movies app searches for a user-defined movie title using OMDB. If the app is able to locate a movie,
+                it will pull that movie up and provide the user with a thumbnail from the YouTube trailer as a link, and
+                a New York Times Review. </p>
+            <h4 class="tech__title">Tech Stack</h4>
+            <div class="tech__info">
+                <ul class="tech__group">
+                    <li class="tech__list">HTML5/CSS</li>
+                    <li class="tech__list">Javascript</li>
+                    <li class="tech__list">jQuery</li>
+                </ul>
+                <ul class="tech__group">
+                    <li class="tech__list">Materialize CSS</li>
+                    <li class="tech__list">Animate CSS</li>
+                    <li class="tech__list">OMDB API</li>
+                    <li class="tech__list">YouTube API</li>
+                    <li class="tech__list">NY Times Movie Review API</li>
+                </ul>
+            </div>
+
             <a href="https://blackmg27.github.io/Movies-Galore/" class="live__link">Live Link</a>
             <a href="https://github.com/BlackMG27/Movies-Galore" class="github__link">Github Link</a>
         </div>
     </section>
-    <section class="portfolio__piece">
+    <section class="portfolio__piece" id="p2">
         <div>
             <img src="./assets/images/giftastic-nerd.png" alt="Nerdy Giftastic">
         </div>
         <div>
-            <p></p>
-            <p></p>
+            <h3 class="project__title">Nerdy Giftastic</h3>
+            <p>
+                This is a project utilizing the Giphy and OMDB APIs. A user can either search with the buttons already
+                on the page or can add a button themselves. Once they click on the button they get a series of gifs
+                which they can add to favorites.
+            </p>
+            <h4 class="tech__title">Tech Stack</h4>
+            <div class="tech__info">
+                <ul class="tech__group">
+                    <li class="tech__list">HTML5/CSS3</li>
+                    <li class="tech__list">Javascript</li>
+                    <li class="tech__list">jQuery</li>
+                    <li class="tech__list">OMDB API</li>
+                    <li class="tech__list">Giphy API</li>
+                    <li class="tech__list">LocalStorage</li>
+                </ul>
+            </div>
             <a href="https://blackmg27.github.io/Giftastic-nerd/" class="live__link">Live Link</a>
             <a href="https://github.com/BlackMG27/Giftastic-nerd" class="github__link">Github Link</a>
         </div>
@@ -62,8 +118,17 @@
             <img src="./assets/images/trivia-game.png" alt="Trivia Game">
         </div>
         <div>
-            <p></p>
-            <p></p>
+            <h3 class="project__title">Trivia Game</h3>
+            <p>This is a geography inspired trivia game. It was inspired by the B-52 song, Roam. The game is designed to
+                test the user's knowledge of geography.</p>
+            <h4 class="tech__title"> Tech Stack</h4>
+            <div class="tech__info">
+                <ul class="tech__group">
+                    <li class="tech__list">HTML5/CSS3</li>
+                    <li class="tech__list">Javascript/jQuery</li>
+                    <li class="tech__list">Open Trivia DB API</li>
+                </ul>
+            </div>
             <a href="https://blackmg27.github.io/TriviaGame/" class="live__link">Live Link</a>
             <a href="https://github.com/BlackMG27/TriviaGame" class="github__link">Github Link</a>
         </div>
@@ -71,30 +136,28 @@
     <footer>
         <div>
             <h3>Ogechi Ike</h3>
-            <h4>I am a web developer who can help solve your problem or help with an existing project.</h4>
+            <h4>I am a web developer who can solve your problem or help with an existing project.</h4>
             <ul class="bottom__nav">
-                <li class="nav__Link_bottom"><a href="index.html">Home</a></li>
-                <li class="nav__Link_bottom"><a href="project.html">Projects</a></li>
+                <li class="nav__link__bottom"><a href="index.html">Home</a></li>
+                <li class="nav__link__bottom"><a href="project.html">Projects</a></li>
+                <li class="nav__link__bottom"><a href="index.html#about">About</a></li>
+                <li class="nav__link__bottom"><a href="project.html#contact">Contact</a></li>
             </ul>
         </div>
         <div>
-            <h3>Follow Me on Social Media</h3>
-            <ul>
+            <h3>Social Links</h3>
+            <ul class="social__group">
                 <li class="bottom__social">
-                    <a href="https://github.com/BlackMG27" target="_blank"><img src="./assets/images/github.png"
-                            alt="Github" /> Github</a>
+                    <a href="https://github.com/BlackMG27" target="_blank"> Github</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://www.linkedin.com/in/ogechi-ike" target="_blank">
-                        <img src="./assets/images/linkedin.png" alt="LinkedIn" />LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ogechi-ike" target="_blank">LinkedIn</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://twitter.com/OgIke27" target="_blank"><img src="./assets/images/twitter.png"
-                            alt="Twitter" />Twitter</a>
+                    <a href="https://twitter.com/OgIke27" target="_blank">Twitter</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://medium.com/@ogechiike" target="_blank"><img src="./assets/images/medium.png"
-                            alt="Medium" />Medium</a>
+                    <a href="https://medium.com/@ogechiike" target="_blank">Medium</a>
                 </li>
             </ul>
         </div>

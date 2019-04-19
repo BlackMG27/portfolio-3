@@ -13,18 +13,18 @@
 
 <body>
     <header>
-        <img src="./assets/images/ike_logo.png" id="ikeLogo" alt="Ike Logo" />
+        <h2 class="nav__title">Ogechi Ike</h2>
         <nav class="topNav" role="navigation">
-            <li class="nav__list" tabindex="0"><a href="./index.html">Home</a></li>
-            <li class="nav__list" tabindex="0"><a href='./project.html'>Projects</a></li>
-            <li class="nav__list" tabindex="0"><a href="#about">About Me</a></li>
-            <li class="nav__list" tabindex="0">
-                <a href="#contact">Contact Me</a>
+            <li class="nav__list"><a href="./index.html">Home</a></li>
+            <li class="nav__list"><a href='./project.html'>Projects</a></li>
+            <li class="nav__list"><a href="#about">About</a></li>
+            <li class="nav__list">
+                <a href="#contact">Contact</a>
             </li>
         </nav>
         <div class="hero__section">
             <h1 class="hero__title">Hello!<br>
-                I can <s class="fake__title">make your wildest dreams come true</s> solve problems, okay?</h1>
+                I can solve your problems.</h1>
             <h2 class="hero__connect">I love designing and developing websites and web applications. Want to talk about
                 your
                 ideas? Give me shout at <span class="hero__contact"><a
@@ -45,7 +45,7 @@
                 excellence. I can collaborate well with others and can work
                 independently and highly regards communication. I have experience in
                 HTML5, CSS3,
-                Javascript, jQuery, Node.js, Express.js, Handlebars, MySQL, and Sequelize ORM, Sketch, Adobe CS,
+                Javascript, jQuery, Node.js, Express.js, Handlebars, MySQL, Sequelize ORM, Sketch, Adobe CS,
                 Balsalmiq, UI Design .
             </p>
             <p>
@@ -67,19 +67,18 @@
         <div>
             <h3>Send Me a Message!</h3>
             <form method="POST" action="https://formspree.io/oike279@gmail.com">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="Enter Your Name"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" placeholder="Enter Your Email"><br>
-                <label for="message">Your Message</label><br>
-                <textarea name="message" id="message" cols="30" rows="10"
-                    placeholder="Enter Your Message"></textarea><br>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email">
+                <label for="message">Your Message</label>
+                <textarea name="message" placeholder="Enter Your Email"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
         <div>
             <h3>...Or Follow Me on Social Media!</h3>
-            <ul>
+            <ul class="social__cluster">
                 <li class="social__link">
                     <a href="https://github.com/BlackMG27" target="_blank"><img src="./assets/images/github.png"
                             alt="Github" /> Github</a>
@@ -99,33 +98,32 @@
             </ul>
         </div>
     </section>
+    <section></section>
     <footer>
         <div>
             <h3>Ogechi Ike</h3>
-            <h4>I am a web developer who can help solve your problem or help with an existing project.</h4>
+            <h4>I am a web developer who can solve your problem or help with an existing project.</h4>
             <ul class="bottom__nav">
-                <li class="nav__Link_bottom"><a href="index.html">Home</a></li>
-                <li class="nav__Link_bottom"><a href="project.html">Projects</a></li>
+                <li class="nav__link__bottom"><a href="index.html">Home</a></li>
+                <li class="nav__link__bottom"><a href="project.html">Projects</a></li>
+                <li class="nav__link__bottom"><a href="index.html#about">About</a></li>
+                <li class="nav__link__bottom"><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
         <div>
-            <h3>Follow Me on Social Media</h3>
-            <ul>
+            <h3>Social Links</h3>
+            <ul class="social__group">
                 <li class="bottom__social">
-                    <a href="https://github.com/BlackMG27" target="_blank"><img src="./assets/images/github.png"
-                            alt="Github" /> Github</a>
+                    <a href="https://github.com/BlackMG27" target="_blank"> Github</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://www.linkedin.com/in/ogechi-ike" target="_blank">
-                        <img src="./assets/images/linkedin.png" alt="LinkedIn" />LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ogechi-ike" target="_blank">LinkedIn</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://twitter.com/OgIke27" target="_blank"><img src="./assets/images/twitter.png"
-                            alt="Twitter" />Twitter</a>
+                    <a href="https://twitter.com/OgIke27" target="_blank">Twitter</a>
                 </li>
                 <li class="bottom__social">
-                    <a href="https://medium.com/@ogechiike" target="_blank"><img src="./assets/images/medium.png"
-                            alt="Medium" />Medium</a>
+                    <a href="https://medium.com/@ogechiike" target="_blank">Medium</a>
                 </li>
             </ul>
         </div>

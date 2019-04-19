@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+/******* TEXT *******/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    background-color: #fffeea;
+    color: #0c084c;
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.nav__title {
+    float: left;
+}
+
+h3 {
+    font-size: 1.95rem;
+    margin-bottom: 2.5%;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.hero__title {
+    font-size: 2.75rem;
+}
+
+.hero__connect {
+    font-size: 1.95rem;
+}
+
+.hero__connect a {
+    text-decoration: none;
+}
+
+.page__title {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.page__sub__title {
+    text-align: center;
+    float: center;
+}
+
+.project__title {
+    font-size: 2.75rem;
+}
+
+.tech__title {
+    font-size: 1.75rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+.portfolio__piece p,
+#about p {
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.tech__list {
+    line-height: 1.5rem;
+}
+
+footer h3 {
+    font-size: 2.2rem;
+}
+
+footer h4 {
+    max-width: 500px;
+    line-height: 1.9rem;
+}
+
+input,
+textarea {
+    width: 95%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.125rem;
+}
+
+.bottom__social,
+.nav__link__bottom {
+    margin: 10px;
+    margin-right: 0;
+}
+
+.bottom__social a,
+.nav__link__bottom a {
+    text-decoration: none;
+}
+
+.nav__link__bottom a,
+.bottom__social a {
+    color: #fffeea;
+    transition: .25s;
+}
+
+.nav__link__bottom a:hover,
+.bottom__social a:hover,
+#about div p a:hover {
+    color: #00b7a8;
+    border-bottom: 1px solid #00b7a8;
+    transition: .25s;
+}
+
+#about div p a {
+    color: #fffeea;
+    transition: .25;
+    text-decoration: none;
+}
+
+.social__link {
+    line-height: .5rem;
+    height: 70px;
+}
+
+.social__cluster {
+    margin-top: -9%;
+}
+
+.social__link a {
+    text-decoration: none;
+    opacity: .65;
+    color: #0c084c;
+}
+
+.social__link a:hover {
+    opacity: 1;
+}
+
+/******* LAYOUT *******/
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.portfolio__piece,
+#about,
+#contact,
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+}
+
+.portfolio__piece {
+    padding-bottom: 11rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio__piece div img {
+    -webkit-box-shadow: 13px 13px 6px -7px rgba(12, 8, 76, 1);
+    -moz-box-shadow: 13px 13px 6px -7px rgba(12, 8, 76, 1);
+    box-shadow: 13px 13px 6px -7px rgba(12, 8, 76, 1);
+}
+
+#about {
+    background-color: #096386;
+    color: #fffeea;
+}
+
+#about img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.portfolio__piece div img {
+    width: 80%;
+}
+
+#p1,
+#p2 {
+    background-color: #096386;
+    color: #fffeea;
+}
+
+.topNav {
+    float: right;
+    margin-right: 2%;
+    width: 30%;
+}
+
+.nav__list {
+    padding: 2%;
+}
+
+.nav__list a {
+    color: #0c084c;
+    transition: .25s;
+}
+
+.topNav li a {
+    text-decoration: none;
+}
+
+header,
+section,
+footer {
+    grid-column: 1/-1;
+    padding: 2.5rem
+}
+
+section {
+    padding-top: 4rem;
+}
+
+#about {
+    padding-bottom: 2rem;
+}
+
+#contact {
+    padding-bottom: 11rem;
+}
+
+header {
+    height: 95vh;
+}
+
+.hero__title,
+.hero__connect {
+    min-width: 300px;
+    max-width: 900px;
+    width: 65%;
+}
+
+.hero__title {
+    margin-top: 11%;
+    line-height: 3.5rem;
+}
+
+.hero__connect {
+    line-height: 2.75rem;
+}
+
+.hero__contact a {
+    color: #0c084c;
+    transition: .25s;
+}
+
+.hero__contact a:hover,
+.nav__list a:hover {
+    color: #00b7a8;
+    border-bottom: 1px solid #00b7a8;
+    transition: .25s;
+}
+
+#ikeLogo {
+    width: 7%;
+    height: 12%;
+}
+
+.tech__info {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.tech__group {
+    display: inline-block;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    width: 95%;
+    height: 60px;
+    border-radius: 7px;
+    font-size: 1.125rem;
+    background-color: #00b7a8;
+    color: #0c084c;
+    transition: .25s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0c084c;
+    color: #00b7a8;
+    transition: .25s;
+}
+
+.live__link,
+.github__link {
+    float: left;
+    margin-right: 10px;
+    padding: 15px;
+    color: #fffeea;
+    text-decoration: none;
+    -webkit-box-shadow: 10px 9px 5px -6px rgba(12, 8, 76, 1);
+    -moz-box-shadow: 10px 9px 5px -6px rgba(12, 8, 76, 1);
+    box-shadow: 10px 9px 5px -6px rgba(12, 8, 76, 1);
+    transition: .25s;
+}
+
+.live__link:hover,
+.github__link:hover {
+    -webkit-box-shadow: 10px -13px 14px 2px rgba(12, 8, 76, 1);
+    -moz-box-shadow: 10px -13px 14px 2px rgba(12, 8, 76, 1);
+    box-shadow: 10px -13px 14px 2px rgba(12, 8, 76, 1);
+    transition: .25s;
+}
+
+.live__link {
+    background-color: #0c084c;
+    border-radius: 7px;
+}
+
+.github__link {
+    background-color: #00b7a8;
+    border-radius: 7px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    background-color: #0c084c;
+    color: #fffeea;
+}
+
+.social__link img,
+.bottom__social img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-top: 15%;
+}
+
+@media screen and (max-width: 900px) {
+    .topNav {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    section,
+    header,
+    footer {
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    header {
+        padding-bottom: 4rem;
+    }
+
+    .nav__title {
+        display: none;
+    }
+
+    .topNav {
+        font-size: 1rem;
+        height: 80px;
+        left: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 9%;
+        width: 100%;
+        background-color: #0c084c;
+        position: fixed;
+    }
+
+    .topNav li {
+        padding: 8px;
+    }
+
+    .nav__list a {
+        color: #fffeea;
+    }
+
+    body {
+        min-width: 100%;
+    }
+
+    .portfolio__piece {
+        height: 100%;
+    }
+
+    .portfolio__piece div img {
+        width: 100%;
+    }
+
+    .live__link,
+    .github__link {
+        width: 95%;
+        margin-bottom: 20px;
+        height: 70px;
+        text-align: center;
+    }
+
+    .live__link a,
+    .github__link a {
+        margin-top: 1px;
+    }
+
+    header {
+        height: 100%;
+    }
+
+    header h1 {
+        padding-top: 4rem;
+    }
+}
