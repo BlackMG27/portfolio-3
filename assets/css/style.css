@@ -43,6 +43,10 @@ li {
     list-style: none;
 }
 
+.nav__li__title {
+    display: none;
+}
+
 nav li {
     display: inline-block;
 }
@@ -55,8 +59,8 @@ nav li {
     font-size: 1.95rem;
 }
 
-.hero__connect a {
-    text-decoration: none;
+.hero__contact a {
+    border-bottom: 1px solid #0c084c;
 }
 
 .page__title {
@@ -67,6 +71,10 @@ nav li {
 .page__sub__title {
     text-align: center;
     float: center;
+}
+
+.skills__list li {
+    margin-bottom: 10px;
 }
 
 .project__title {
@@ -156,7 +164,11 @@ textarea {
     opacity: 1;
 }
 
+
+
 /******* LAYOUT *******/
+
+
 body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -315,6 +327,7 @@ button[type="submit"]:hover {
 .github__link {
     float: left;
     margin-right: 10px;
+    margin-top: 30px;
     padding: 15px;
     color: #fffeea;
     text-decoration: none;
@@ -385,9 +398,14 @@ footer {
         display: none;
     }
 
+    .nav__li__title {
+        display: block;
+        color: #fffeea;
+    }
+
     .topNav {
         font-size: 1rem;
-        height: 80px;
+        height: 120px;
         left: 0;
         top: 0;
         text-align: center;

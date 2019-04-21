@@ -1,6 +1,6 @@
 //code for smooth scroll got from W3Schools
 $('a[href*="#"]')
-// Remove links that don't actually link to anything
+    // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function (event) {
@@ -8,9 +8,9 @@ $('a[href*="#"]')
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             // Figure out element to scroll to
             var target = $(this.hash);
-            target = target.length
-                ? target
-                : $('[name=' + this.hash.slice(1) + ']');
+            target = target.length ?
+                target :
+                $('[name=' + this.hash.slice(1) + ']');
             // Checks to see if the link exists
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
